@@ -52,23 +52,23 @@ public class PlayerCtrl : MonoBehaviour
         //키보드 입력값을 기준으로 동작할 애니메이션 수행
         if (v >= 0.1f)
         {
-            anim.CrossFade(playerAnim.runF.name, 0.3f); // 전진 애니메이션
+            anim.CrossFade(playerAnim.runF.name, 0.1f); // 전진 애니메이션
         }
         else if(v <= -0.1f)
         {
-            anim.CrossFade(playerAnim.runB.name, 0.3f); // 후진 애니메이션
+            anim.CrossFade(playerAnim.runB.name, 0.1f); // 후진 애니메이션
         }
         else if(h >= 0.1f)
         {
-            anim.CrossFade(playerAnim.runR.name, 0.3f); // 오른쪽 이동 애니메이션
+            anim.CrossFade(playerAnim.runR.name, 0.1f); // 오른쪽 이동 애니메이션
         }
         else if(h <= -0.1f)
         {
-            anim.CrossFade(playerAnim.runL.name, 0.3f); // 왼쪽 이동 애니메이션
+            anim.CrossFade(playerAnim.runL.name, 0.1f); // 왼쪽 이동 애니메이션
         }
         else
         {
-            anim.CrossFade(playerAnim.idle.name, 0.3f); // 정지 시 idle 애니메이션
+            anim.CrossFade(playerAnim.idle.name, 0.1f); // 정지 시 idle 애니메이션
         }
     }
 }
