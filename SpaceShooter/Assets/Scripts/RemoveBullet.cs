@@ -19,6 +19,7 @@ public class RemoveBullet : MonoBehaviour
         ContactPoint contact = collision.contacts[0]; // 충돌 지점의 정보를 추출
         Quaternion rot = Quaternion.FromToRotation(-Vector3.forward, contact.normal); // 법선 벡터가 이루는 회전 각도를 추출
 
-        Instantiate(sparkEffect, contact.point, rot); // 스파크 효과를 생성
+        GameObject spark = Instantiate(sparkEffect, contact.point, rot); // 스파크 효과를 생성
+        spark.transform.SetParent(this.transform); // 스파크 효과의 부모를 드럼통 또는 벽으로 설정
     }
 }
