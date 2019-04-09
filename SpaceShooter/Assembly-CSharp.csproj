@@ -61,12 +61,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\BarrelCtrl.cs" />
-    <Compile Include="Assets\Scripts\BulletCtrl.cs" />
-    <Compile Include="Assets\Scripts\FireCtrl.cs" />
-    <Compile Include="Assets\Scripts\MyGizmos.cs" />
-    <Compile Include="Assets\Scripts\PlayerCtrl.cs" />
-    <Compile Include="Assets\Scripts\RemoveBullet.cs" />
+    <Compile Include="Assets\02.Scripts\BarrelCtrl.cs" />
+    <Compile Include="Assets\02.Scripts\BulletCtrl.cs" />
+    <Compile Include="Assets\02.Scripts\FireCtrl.cs" />
+    <Compile Include="Assets\02.Scripts\MyGizmos.cs" />
+    <Compile Include="Assets\02.Scripts\PlayerCtrl.cs" />
+    <Compile Include="Assets\02.Scripts\RemoveBullet.cs" />
     <Compile Include="Assets\Shared\Ramps\Runtime\RampAsset.cs" />
     <Compile Include="Assets\Shared\Scripts\AdjustTimeScale.cs" />
     <Compile Include="Assets\Shared\Scripts\DecalDestroyer.cs" />
@@ -96,6 +96,12 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+    <Reference Include="Unity.ProGrids">
+      <HintPath>C:/Users/admin/Documents/GitHub/unity_tutorial_2018/SpaceShooter/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProGrids.Editor">
+      <HintPath>C:/Users/admin/Documents/GitHub/unity_tutorial_2018/SpaceShooter/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/admin/Documents/GitHub/unity_tutorial_2018/SpaceShooter/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -113,12 +119,6 @@
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/admin/Documents/GitHub/unity_tutorial_2018/SpaceShooter/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProGrids">
-      <HintPath>C:/Users/admin/Documents/GitHub/unity_tutorial_2018/SpaceShooter/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProGrids.Editor">
-      <HintPath>C:/Users/admin/Documents/GitHub/unity_tutorial_2018/SpaceShooter/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
