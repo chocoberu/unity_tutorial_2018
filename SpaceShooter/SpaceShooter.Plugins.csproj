@@ -647,6 +647,18 @@
       <Project>{FA5CA632-7858-B348-2678-3563F1DAD317}</Project>
       <Name>com.unity.multiplayer-hlapi.Runtime</Name>
     </ProjectReference>
+    <ProjectReference Include="EnemyAD.csproj">
+      <Project>{87FB9356-AD72-013C-0B3C-5CCCB516D750}</Project>
+      <Name>EnemyAD</Name>
+    </ProjectReference>
+    <ProjectReference Include="PlayerAD.csproj">
+      <Project>{953E8330-015E-C748-7BB6-2A436B042753}</Project>
+      <Name>PlayerAD</Name>
+    </ProjectReference>
+    <ProjectReference Include="StageAD.csproj">
+      <Project>{19C1DCB8-F3D3-9E9A-B277-32E157950022}</Project>
+      <Name>StageAD</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Standard Assets\Utility\SmoothFollow.cs" />
