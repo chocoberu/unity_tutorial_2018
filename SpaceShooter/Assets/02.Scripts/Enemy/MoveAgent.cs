@@ -72,7 +72,9 @@ public class MoveAgent : MonoBehaviour
 
     void MoveWayPoint() // 다음 목적지까지 이동 명령을 내리는 함수
     {
+        //Debug.Log("MoveWayPoint()");
         if (agent.isPathStale) return; // 최단거리 경로 계산이 끝나지 않았으면 다음을 수행하지 않음
+    
 
         // 다음 목적지를 wayPoints 배열에서 추출한 위치로 다음 목적지를 지정
         agent.destination = wayPoints[nextIdx].position;
@@ -100,7 +102,7 @@ public class MoveAgent : MonoBehaviour
             Quaternion rot = Quaternion.LookRotation(agent.desiredVelocity); // NavMeshAgent가 가야 할 방향 벡터를 쿼터니언 타입의 각도로 변환
             enemyTr.rotation = Quaternion.Slerp(enemyTr.rotation, rot, Time.deltaTime * damping); // 보간 함수를 사용해 점진적으로 회전 시킴
         }
-        if (_patrolling) return; // 순찰 모드가 아닐 경우 이후 로직을 수행하지 않음
+        if (!_patrolling) return; // 순찰 모드가 아닐 경우 이후 로직을 수행하지 않음
         // NavMeshAgent가 이동하고 있고 목적지에 도착했는지 여부를 계산
         if(agent.velocity.sqrMagnitude >= 0.2f * 0.2f && agent.remainingDistance <= 0.25f)
         {
