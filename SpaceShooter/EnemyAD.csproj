@@ -597,7 +597,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="PlayerAD.csproj">
+      <Project>{953E8330-015E-C748-7BB6-2A436B042753}</Project>
+      <Name>PlayerAD</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\02.Scripts\Enemy\EnemyAI.cs" />
+    <Compile Include="Assets\02.Scripts\Enemy\EnemyDamage.cs" />
     <Compile Include="Assets\02.Scripts\Enemy\EnemyFire.cs" />
     <Compile Include="Assets\02.Scripts\Enemy\MoveAgent.cs" />
   </ItemGroup>
