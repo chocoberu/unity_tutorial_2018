@@ -39,6 +39,8 @@ public class EnemyAI : MonoBehaviour
     private readonly int hashSpeed = Animator.StringToHash("Speed");
     private readonly int hashDie = Animator.StringToHash("Die");
     private readonly int hashDieIdx = Animator.StringToHash("DieIdx");
+    private readonly int hashOffset = Animator.StringToHash("Offset");
+    private readonly int hashWalkSpeed = Animator.StringToHash("WalkSpeed");
 
     private void Awake() // 가장 먼저 수행되는 함수 
     {
@@ -55,6 +57,9 @@ public class EnemyAI : MonoBehaviour
         ws = new WaitForSeconds(0.3f);
         moveAgent = GetComponent<MoveAgent>(); // 이동을 제어하는 MoveAgent 클래스를 추출
         enemyFire = GetComponent<EnemyFire>(); // 총알 발사를 제어하는 EnemyFire 클래스를 추출
+
+        animator.SetFloat(hashOffset, Random.Range(0.0f, 1.0f)); // Cycle Offset 값을 불규칙하게 변경
+        animator.SetFloat(hashWalkSpeed, Random.Range(1.0f, 1.2f)); // Speed 값을 불규칙하게 변경
     }
     void OnEnable() // Awake 이후 Statr 이전에 실행되는 함수
     {

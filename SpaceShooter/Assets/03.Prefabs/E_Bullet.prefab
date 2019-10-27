@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4040198219641922502}
   - component: {fileID: 6066079756660117113}
   - component: {fileID: 2220029983253939103}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: E_Bullet
   m_TagString: BULLET
   m_Icon: {fileID: 0}
@@ -59,7 +59,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4040198219641922498}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.2
@@ -90,6 +90,7 @@ TrailRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
